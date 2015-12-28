@@ -1,7 +1,4 @@
-from django.contrib import admin
+from django.apps import AppConfig
 
-from models import *
-
-admin.site.register(Course)
-admin.site.register(Teacher)
-admin.site.register(Student)
+class CourseConfig(AppConfig):
+    name = 'courseApp'
